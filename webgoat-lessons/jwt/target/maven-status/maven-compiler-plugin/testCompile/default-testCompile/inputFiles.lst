@@ -1,0 +1,5 @@
+/home/boris3/Desktop/Webgoat_pipeline/webgoat-lessons/jwt/src/test/java/org/owasp/webgoat/jwt/JWTRefreshEndpointTest.java
+/home/boris3/Desktop/Webgoat_pipeline/webgoat-lessons/jwt/src/test/java/org/owasp/webgoat/jwt/JWTVotesEndpointTest.java
+/home/boris3/Desktop/Webgoat_pipeline/webgoat-lessons/jwt/src/test/java/org/owasp/webgoat/jwt/TokenTest.java
+/home/boris3/Desktop/Webgoat_pipeline/webgoat-lessons/jwt/src/test/java/org/owasp/webgoat/jwt/JWTSecretKeyEndpointTest.java
+/home/boris3/Desktop/Webgoat_pipeline/webgoat-lessons/jwt/src/test/java/org/owasp/webgoat/jwt/JWTFinalEndpointTest.java

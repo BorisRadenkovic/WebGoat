@@ -1,0 +1,4 @@
+/home/boris3/Desktop/Webgoat_pipeline/webgoat-lessons/insecure-deserialization/src/main/java/org/owasp/webgoat/deserialization/InsecureDeserialization.java
+/home/boris3/Desktop/Webgoat_pipeline/webgoat-lessons/insecure-deserialization/src/main/java/org/owasp/webgoat/deserialization/InsecureDeserializationTask.java
+/home/boris3/Desktop/Webgoat_pipeline/webgoat-lessons/insecure-deserialization/src/main/java/org/owasp/webgoat/deserialization/SerializationHelper.java
+/home/boris3/Desktop/Webgoat_pipeline/webgoat-lessons/insecure-deserialization/src/main/java/org/dummy/insecure/framework/VulnerableTaskHolder.java

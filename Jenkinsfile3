@@ -1,0 +1,43 @@
+
+
+pipeline {
+    
+    agent any
+
+      
+    
+    stages {
+             stage('CLONE') {
+                     steps {
+                                        
+                          git branch: 'master', credentialsId: 'MyGithub', url: 'https://github.com/brki18/devops_web_goat'
+                           }
+               }
+        
+        stage('BUILD') {
+                              
+            steps {
+           //     dir ("devops_web_goat"){
+                sh "mvn clean install -DskipTests"
+                
+            }
+        }
+            
+       
+      
+       stage('GETJar') {
+            steps {
+                sh "sudo cp /var/lib/jenkins/workspace/Webgoat_clean_install/webgoat-server/target/webgoat-server-v8.1.0.jar /home/boris2" 
+                
+            }
+       }
+        stage('STARTApp') {
+            steps {
+                sh "nohup java -jar /home/boris2/webgoat-server-v8.1.0.jar --server.port=8081 --server.address=localhost > /dev/null 2>&1 &"
+                 sh "sudo xdg-open http://localhost:8081/webgoat </dev/null >/dev/null 2>&1"
+            }
+        
+        }
+    
+    }
+}

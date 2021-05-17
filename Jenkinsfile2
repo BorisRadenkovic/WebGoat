@@ -1,0 +1,60 @@
+// @Library('Jenkins-shared-library') _
+
+pipeline {
+    
+    agent any
+      
+ 
+    stages {
+    
+    
+       // stage('CLONE') {
+         //   steps {
+                
+           //    script{
+                                                    
+             //     clone.cloneRepo("https://github.com/brki18/devops_web_goat", "*/master", "MyGithub")
+               // }
+                
+           // }
+       // }
+        
+      //  stage('BUILD') {
+                              
+        //    steps {
+             
+          //      script{
+            //    build.cleanInstall()
+             //   }
+          //  }
+            
+                 
+     // }
+        stage('GETJar') {
+             steps {
+                sh "sudo cp /var/lib/jenkins/workspace/Webgoat_ansible_pipeline/webgoat-server/target/webgoat-server-v8.1.0.jar /home/boris2" 
+              
+            }
+       }
+               
+       stage(COPYtoRemote) {
+            steps {
+            sh "sudo scp -v /home/boris2/webgoat-server-v8.1.0.jar boris3@10.113.80.109:/home/boris3"
+            }
+       }
+       
+       stage(REMOVEJar) {
+             steps {
+                  sh "sudo rm -rf /home/boris2/webgoat-server-v8.1.0.jar"
+             }
+       }           
+   
+     //  stage ('ANSIBLEconfigDepl') {
+      //       steps {
+           //        sh "sudo ansible-playbook deploy_war_tomcat.yml -u ansible --private-key ~/.ssh/id_rsa"
+                   // sh "sudo ansible-playbook deploy_war_tomcat.yml" 
+        //     }
+     //  }
+    
+    }
+}

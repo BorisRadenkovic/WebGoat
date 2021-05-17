@@ -1,0 +1,16 @@
+/home/boris3/Desktop/Webgoat_pipeline/webwolf/src/main/java/org/owasp/webwolf/MvcConfiguration.java
+/home/boris3/Desktop/Webgoat_pipeline/webwolf/src/main/java/org/owasp/webwolf/requests/WebWolfTraceRepository.java
+/home/boris3/Desktop/Webgoat_pipeline/webwolf/src/main/java/org/owasp/webwolf/user/RegistrationController.java
+/home/boris3/Desktop/Webgoat_pipeline/webwolf/src/main/java/org/owasp/webwolf/user/UserForm.java
+/home/boris3/Desktop/Webgoat_pipeline/webwolf/src/main/java/org/owasp/webwolf/WebSecurityConfig.java
+/home/boris3/Desktop/Webgoat_pipeline/webwolf/src/main/java/org/owasp/webwolf/user/WebGoatUser.java
+/home/boris3/Desktop/Webgoat_pipeline/webwolf/src/main/java/org/owasp/webwolf/requests/Requests.java
+/home/boris3/Desktop/Webgoat_pipeline/webwolf/src/main/java/org/owasp/webwolf/FileServer.java
+/home/boris3/Desktop/Webgoat_pipeline/webwolf/src/main/java/org/owasp/webwolf/mailbox/MailboxController.java
+/home/boris3/Desktop/Webgoat_pipeline/webwolf/src/main/java/org/owasp/webwolf/user/UserService.java
+/home/boris3/Desktop/Webgoat_pipeline/webwolf/src/main/java/org/owasp/webwolf/user/UserRepository.java
+/home/boris3/Desktop/Webgoat_pipeline/webwolf/src/main/java/org/owasp/webwolf/user/UserValidator.java
+/home/boris3/Desktop/Webgoat_pipeline/webwolf/src/main/java/org/owasp/webwolf/WebWolf.java
+/home/boris3/Desktop/Webgoat_pipeline/webwolf/src/main/java/org/owasp/webwolf/mailbox/Email.java
+/home/boris3/Desktop/Webgoat_pipeline/webwolf/src/main/java/org/owasp/webwolf/mailbox/MailboxRepository.java
+/home/boris3/Desktop/Webgoat_pipeline/webwolf/src/main/java/org/owasp/webwolf/requests/LandingPage.java

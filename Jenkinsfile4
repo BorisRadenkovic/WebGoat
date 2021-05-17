@@ -1,0 +1,34 @@
+
+pipeline {
+    
+    agent any
+
+      
+    
+    stages {
+             stage('CLONE') {
+                     steps {
+                                        
+                          git branch: 'main', credentialsId: 'MyGithub', url: 'https://github.com/BorisRadenkovic/WebGoat.git'
+                           }
+               }
+        
+        stage('MavenBuild_Deploy_Dockerhub') {
+                              
+            steps {
+           
+                sh "mvn clean deploy -DskipTests -Ddocker.user=borisradenkovic -Ddocker.password=Dasamasa21 -Ddocker.url=https://hub.docker.com/repository/docker/borisradenkovic/webgoat1"
+                
+                  }
+             }
+             
+             stage('RunDockerImage') {
+               steps {
+               
+                 sh "docker run -d -p 8080:8080 borisradenkovic/webgoat1:v8.1.0"
+                 }
+             }
+             
+      }
+        
+}

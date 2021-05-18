@@ -12,6 +12,10 @@ pipeline {
                           git branch: 'main', credentialsId: 'MyGithub', url: 'https://github.com/BorisRadenkovic/WebGoat.git'
                            }
                }
+               
+        stage('MaveBuild') {
+            steps {
+                    sh "
         
         stage('MavenBuild_Deploy_Dockerhub') {
                               

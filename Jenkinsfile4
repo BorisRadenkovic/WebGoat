@@ -15,7 +15,9 @@ pipeline {
                
         stage('MaveBuild') {
             steps {
-                    sh "
+                    sh "mvn clean install -DskipTests"
+             }
+         }
         
         stage('MavenBuild_Deploy_Dockerhub') {
                               

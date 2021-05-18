@@ -14,7 +14,7 @@ USER webgoat
 
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY index.html /usr/share/nginx/html/
-COPY home/boris2/boris2_jenkins_home/workspace/Goat_docker/webgoat-server/target/webgoat-server-v8.1.0.jar /home/webgoat/webgoat.jar
+COPY home/boris2/boris2_jenkins_home/workspace/Goat_docker/webgoat-server/target/webgoat-server-${webgoat_version}.jar /home/webgoat/webgoat.jar
 COPY webwolf-${webgoat_version}.jar /home/webgoat/webwolf.jar
 COPY start.sh /home/webgoat
 

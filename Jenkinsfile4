@@ -24,7 +24,7 @@ pipeline {
                               
             steps {
            
-                sh "mvn clean deploy -DskipTests -Ddocker.user=borisradenkovic -Ddocker.password=Dasamasa21 -Ddocker.url=https://hub.docker.com/repository/docker/borisradenkovic/webgoat1"
+                sh "mvn clean deploy -X -DskipTests -Ddocker.user=borisradenkovic -Ddocker.password=Dasamasa21 -Ddocker.url=https://hub.docker.com/repository/docker/borisradenkovic/webgoat1"
                 
                   }
              }

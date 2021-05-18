@@ -13,6 +13,12 @@ pipeline {
                            }
                }
                
+               stage('Permisssions') {
+            steps {
+                    sh "sudo chmod -R ugo+rw /home/boris2/boris2_jenkins_home/workspace/Goat_docker"
+             }
+         }
+               
         stage('MaveBuild') {
             steps {
                     sh "mvn clean install -DskipTests"

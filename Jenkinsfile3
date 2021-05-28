@@ -2,9 +2,11 @@
 
 pipeline {
     
-    agent any
-
-      
+    agent {
+    
+    label "demo-docker-slave"
+    }
+   
     
     stages {
              stage('CLONE') {
